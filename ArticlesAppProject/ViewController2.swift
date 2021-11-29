@@ -18,7 +18,7 @@ class ViewController2: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "Articles", in: context)
         let newArticle = Articles(entity: entity! , insertInto: context)
         newArticle.name = labelView1.text
-        newArticle.desc = labelView1.text //********
+        newArticle.desc = labelView2.text
         newArticle.type = select(value: chooseCategory.selectedSegmentIndex)
         do{
             try context.save()

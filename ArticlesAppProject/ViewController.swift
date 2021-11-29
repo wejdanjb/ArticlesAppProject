@@ -89,21 +89,24 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
         let cell = homeTable.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! MyCell
         if homeSearch.selectedScopeButtonIndex == 0 {
             cell.name.text = articlesArray[indexPath.row].name
-//            cell.type.text = articlesArray[indexPath.row].desc // ***
+//            cell.desc.text = articlesArray[indexPath.row].desc // ***
             cell.type.text = articlesArray[indexPath.row].type
         } else  if homeSearch.selectedScopeButtonIndex == 1{
             cell.name.text = articleFilterd[indexPath.row].name
+//            cell.desc.text = articlesArray[indexPath.row].desc // ***
             cell.type.text = articleFilterd[indexPath.row].type
         }else  if homeSearch.selectedScopeButtonIndex == 2{
             cell.name.text = articleFilterd[indexPath.row].name
+//            cell.desc.text = articlesArray[indexPath.row].desc // ***
             cell.type.text = articleFilterd[indexPath.row].type
         }else  if homeSearch.selectedScopeButtonIndex == 3{
             cell.name.text = articleFilterd[indexPath.row].name
+//            cell.desc.text = articlesArray[indexPath.row].desc // ***
             cell.type.text = articleFilterd[indexPath.row].type
         }
-        
         return cell
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         homeTable.reloadData()
     }
@@ -112,7 +115,6 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
         nameSend = articlesArray[indexPath.row].name!
         descSend = articlesArray[indexPath.row].desc!
         typeSend = articlesArray[indexPath.row].type!
-
         self.performSegue(withIdentifier: "NextVC", sender: self)
     }
     

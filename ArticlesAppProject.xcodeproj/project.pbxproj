@@ -68,10 +68,10 @@
 		82CF65EE274FA82F0018A7C4 /* ArticlesAppProject */ = {
 			isa = PBXGroup;
 			children = (
-				AD3C595627515EF9008CFC39 /* CoreDataManager.swift */,
-				82CF65F3274FA82F0018A7C4 /* ViewController.swift */,
 				82CF65F5274FA82F0018A7C4 /* Main.storyboard */,
+				AD3C595627515EF9008CFC39 /* CoreDataManager.swift */,
 				82535A86274FCB3C006B2BDC /* Category.swift */,
+				82CF65F3274FA82F0018A7C4 /* ViewController.swift */,
 				82CF6608274FB9460018A7C4 /* ViewController2.swift */,
 				82CF660A274FB95D0018A7C4 /* ViewController3.swift */,
 				82CF6606274FB0BD0018A7C4 /* MyCell.swift */,

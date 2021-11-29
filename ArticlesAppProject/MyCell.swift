@@ -6,7 +6,6 @@ class MyCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var type: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
