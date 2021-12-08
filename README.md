@@ -1,5 +1,5 @@
 # Team:
 - Amal alghofaily
 - Areej mashabi
-- Wejdan Mohammad
+- Wejdan ibrahim
 # ArticlesAppProject
