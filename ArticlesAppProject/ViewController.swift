@@ -113,7 +113,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         nameSend = articlesArray[indexPath.row].name!
-        descSend = articlesArray[indexPath.row].desc!
+        descSend = articlesArray[indexPath.row].desc ?? ""
         typeSend = articlesArray[indexPath.row].type!
         self.performSegue(withIdentifier: "NextVC", sender: self)
     }
